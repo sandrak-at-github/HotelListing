@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HotelListing.API.Controllers
 {
+    // Nur Kommentar für Git-Test 
+    
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
