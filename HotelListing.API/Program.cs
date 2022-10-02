@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 var connectionString = builder.Configuration.GetConnectionString("HotelListingDbConnectionString");
+
 builder.Services.AddDbContext<HotelListingDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
@@ -36,7 +37,7 @@ builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));  //Ohne Erklärung aufgetaucht
 
 builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
-
+builder.Services.AddScoped<IHotelsRepository, HotelsRepository>();
 
 
 

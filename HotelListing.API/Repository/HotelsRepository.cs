@@ -11,5 +11,10 @@ namespace HotelListing.API.Repository
         {
             this._context = context;
         }
+
+        public Task<Hotel> GetDetails(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

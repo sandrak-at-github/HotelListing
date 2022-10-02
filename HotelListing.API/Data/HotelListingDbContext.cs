@@ -6,7 +6,6 @@ namespace HotelListing.API.Data
     public class HotelListingDbContext : DbContext
     {
         // define later. contract between app and database
-
         public HotelListingDbContext(DbContextOptions options) : base(options)
         {      
 
